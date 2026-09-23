@@ -22,7 +22,7 @@ export const LivePreviewModal = ({ template, onClose }) => {
   if (!template) return null;
 
   // Map template id to sample demo config
-  const telegramOrderLink = `https://t.me/yourusername?text=${encodeURIComponent(
+  const telegramOrderLink = `https://t.me/ChhiengPhouChhit?text=${encodeURIComponent(
     `សួស្តី! ខ្ញុំចាប់អារម្មណ៍ចង់កុម្ម៉ង់ធ្វើ Portfolio ម៉ូត៖ ${template.title.km} (${template.title.en})`
   )}`;
 

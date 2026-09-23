@@ -62,7 +62,7 @@ export const TemplatesCatalogSection = ({ onSelectFullView }) => {
         {/* 5 Templates Grid for the Active Category */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentCategoryTemplates.map((template) => {
-            const telegramOrderUrl = `https://t.me/yourusername?text=${encodeURIComponent(
+            const telegramOrderUrl = `https://t.me/ChhiengPhouChhit?text=${encodeURIComponent(
               `សួស្តី! ខ្ញុំចាប់អារម្មណ៍ចង់កុម្ម៉ង់ធ្វើ Portfolio ម៉ូត៖ ${template.title.km} (${template.price})`
             )}`;
 

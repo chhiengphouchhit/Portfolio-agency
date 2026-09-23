@@ -72,84 +72,45 @@ export const ServicePricing = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Standard Package */}
-          <div className="glass-card rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-brand-500/40 transition-all flex flex-col justify-between">
-            <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
-                {isKhmer ? "កញ្ចប់សន្សំសំចៃ" : "Standard Package"}
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-                {isKhmer ? "Portfolio ផ្ទាល់ខ្លួន Standard" : "Personal Portfolio"}
-              </h3>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">$29</span>
-                <span className="text-xs text-slate-500 font-medium">{isKhmer ? "/ទូទាត់តែម្តង" : "one-time"}</span>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-500 mt-2">
-                {isKhmer ? "ស័ក្តិសមសម្រាប់សិស្ស និស្សិត និងអ្នកចង់បានគេហទំព័រផ្ទាល់ខ្លួនដំបូង" : "Ideal for students, fresh graduates, and creators starting out."}
-              </p>
-
-              <div className="space-y-3 pt-6 border-t border-slate-100 dark:border-slate-800 mt-6">
-                {[
-                  "ជ្រើសរើសម៉ូត Portfolio ណាមួយក៏បាន",
-                  "Free Hosting ជារៀងរហូត (មិនបង់ប្រចាំខែ)",
-                  "Link ផ្ទាល់ខ្លួន (name.vercel.app)",
-                  "គាំទ្រ ២ ភាសា (ខ្មែរ + អង់គ្លេស)",
-                  "Dark / Light Mode ទំនើប",
-                  "រួចរាល់ក្នុងរយៈពេល ២៤ ម៉ោង",
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                    <Check className="w-4 h-4 text-brand-500 shrink-0" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <a
-              href={`https://t.me/yourusername?text=${encodeURIComponent("សួស្តី! ខ្ញុំចង់កុម្ម៉ង់កញ្ចប់ Portfolio Standard $29")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-sm glass-card text-slate-900 dark:text-white hover:border-brand-500 hover:text-brand-500 transition-all transform active:scale-95"
-            >
-              <Send className="w-4 h-4" />
-              <span>{isKhmer ? "កុម្ម៉ង់កញ្ចប់ $29 ឥឡូវនេះ" : "Order Standard ($29)"}</span>
-            </a>
-          </div>
-
-          {/* Pro Package */}
-          <div className="glass-card rounded-3xl p-8 border-2 border-brand-500 shadow-2xl shadow-brand-500/10 relative flex flex-col justify-between bg-gradient-to-b from-brand-500/[0.04] to-transparent">
-            <div className="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full bg-brand-500 text-white text-xs font-extrabold shadow-md">
-              👑 {isKhmer ? "ពេញនិយមបំផុត" : "MOST POPULAR"}
+        <div className="max-w-2xl mx-auto">
+          {/* Standard Package $29 Centerpiece */}
+          <div className="glass-card rounded-3xl p-8 sm:p-10 border-2 border-brand-500/80 shadow-2xl shadow-brand-500/15 relative flex flex-col justify-between bg-gradient-to-b from-brand-500/[0.05] via-transparent to-brand-500/[0.02]">
+            <div className="absolute -top-3.5 right-6 px-4 py-1 rounded-full bg-gradient-to-r from-brand-500 to-emerald-500 text-white text-xs font-black shadow-lg">
+              ✨ {isKhmer ? "កញ្ចប់ពេញនិយមបំផុត" : "ALL-IN-ONE PACKAGE"}
             </div>
 
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-brand-500 mb-2">
-                {isKhmer ? "កញ្ចប់អាជីពពេញលេញ" : "Pro VIP Package"}
+              <div className="text-xs font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 mb-2">
+                {isKhmer ? "កញ្ចប់សេវាកម្មពេញលេញ" : "Complete Service Package"}
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-                {isKhmer ? "Portfolio Pro + Domain + Telegram" : "Pro Portfolio + Domain"}
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                {isKhmer ? "Portfolio Website ផ្ទាល់ខ្លួនអាជីព" : "Professional Portfolio Website"}
               </h3>
               <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-4xl sm:text-5xl font-extrabold text-brand-500">$59</span>
-                <span className="text-xs text-slate-500 font-medium">{isKhmer ? "/ទូទាត់តែម្តង" : "one-time"}</span>
+                <span className="text-5xl sm:text-6xl font-black text-brand-500">$29</span>
+                <span className="text-xs sm:text-sm text-slate-500 font-semibold">{isKhmer ? "/ទូទាត់តែម្តងគត់ (Free Hosting រហូត)" : "one-time (Free Hosting Forever)"}</span>
               </div>
-              <p className="text-xs sm:text-sm text-slate-500 mt-2">
-                {isKhmer ? "ស័ក្តិសមសម្រាប់អ្នកជំនាញ Freelancers និងម្ចាស់អាជីវកម្ម" : "Best for senior professionals, agency owners, and top freelancers."}
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                {isKhmer
+                  ? "ស័ក្តិសមសម្រាប់អ្នកជំនាញគ្រប់វិស័យ Freelancers និស្សិត និងម្ចាស់អាជីវកម្ម ដែលចង់បានគេហទំព័រផ្ទាល់ខ្លួនបែប High-End។"
+                  : "Ideal for creatives, developers, photographers, students, and professionals seeking a standout online presence."}
               </p>
 
-              <div className="space-y-3 pt-6 border-t border-slate-100 dark:border-slate-800 mt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-6 border-t border-slate-100 dark:border-slate-800 mt-6">
                 {[
-                  "គ្រប់មុខងារទាំងអស់ក្នុងកញ្ចប់ Standard",
-                  "ថែម Custom Domain ផ្ទាល់ខ្លួន (.com / .me រយៈពេល ១ ឆ្នាំ)",
-                  "Contact Form បាញ់សារ Alert ចូល Telegram ភ្លាមៗ",
-                  "កក់ម៉ោងជជែកផ្ទាល់តាម Calendly",
-                  "រៀបចំ SEO ស្វែងរកឈ្មោះឃើញលើ Google",
-                  "កែប្រែព័ត៌មានដោយសេរីចំនួន ៣ ដង",
+                  isKhmer ? "ជ្រើសរើសម៉ូត Portfolio ណាមួយក៏បាន" : "Choose Any of 25 Real Templates",
+                  isKhmer ? "Free Lifetime Hosting (គ្មានថ្លៃប្រចាំខែ)" : "Free Lifetime Hosting (No monthly fee)",
+                  isKhmer ? "Custom Subdomain ឬ GitHub Pages" : "Custom Subdomain & GitHub Pages",
+                  isKhmer ? "Responsive ស្អាតលើគ្រប់ទូរស័ព្ទដៃ" : "100% Mobile & Tablet Responsive",
+                  isKhmer ? "គាំទ្រ ២ ភាសា (ខ្មែរ + English)" : "Dual Language (Khmer & English)",
+                  isKhmer ? "Dark & Light Mode ទំនើប" : "Dark & Light Mode Theme Support",
+                  isKhmer ? "ប៊ូតុង Telegram សម្រាប់ភ្ញៀវកុម្ម៉ង់ផ្ទាល់" : "Direct Telegram Contact & Order Button",
+                  isKhmer ? "រួចរាល់លឿនក្នុងរយៈពេល ២៤ ម៉ោង" : "Fast Turnaround in 24 Hours",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-800 dark:text-slate-200 font-medium">
-                    <Check className="w-4 h-4 text-brand-500 shrink-0" />
+                    <div className="w-5 h-5 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0">
+                      <Check className="w-3.5 h-3.5" />
+                    </div>
                     <span>{item}</span>
                   </div>
                 ))}
@@ -157,13 +118,13 @@ export const ServicePricing = () => {
             </div>
 
             <a
-              href={`https://t.me/yourusername?text=${encodeURIComponent("សួស្តី! ខ្ញុំចង់កុម្ម៉ង់កញ្ចប់ Portfolio Pro $59 ជាមួយ Custom Domain និង Telegram Alert")}`}
+              href={`https://t.me/ChhiengPhouChhit?text=${encodeURIComponent("សួស្តី! ខ្ញុំចង់កុម្ម៉ង់ធ្វើ Portfolio Website កញ្ចប់ $29")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-sm bg-brand-500 hover:bg-brand-600 text-white shadow-xl shadow-brand-500/25 transition-all transform active:scale-95"
+              className="mt-8 inline-flex items-center justify-center gap-2.5 w-full py-4 rounded-2xl font-black text-sm bg-gradient-to-r from-brand-500 via-emerald-500 to-brand-500 hover:from-brand-600 hover:to-emerald-600 text-white shadow-xl shadow-brand-500/25 transition-all transform active:scale-95 shimmer-btn"
             >
               <Send className="w-4 h-4" />
-              <span>{isKhmer ? "កុម្ម៉ង់កញ្ចប់ Pro ($59) ឥឡូវនេះ" : "Order Pro VIP ($59)"}</span>
+              <span>{isKhmer ? "កុម្ម៉ង់កញ្ចប់ $29 ឥឡូវនេះ (Telegram)" : "Order Now via Telegram ($29)"}</span>
             </a>
           </div>
         </div>

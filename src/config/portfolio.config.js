@@ -354,14 +354,14 @@ export const portfolioConfig = {
 
   // 7. SOCIAL LINKS & DIRECT CONTACTS
   socials: {
-    telegram: "https://t.me/yourusername",
+    telegram: "https://t.me/ChhiengPhouChhit",
     facebook: "https://facebook.com/yourbrand",
-    phone: "+855 12 345 678",
-    linkedin: "https://linkedin.com/in/yourusername",
-    github: "https://github.com/yourusername",
+    phone: "081536697",
+    linkedin: "https://linkedin.com/in/chhiengphouchhit",
+    github: "https://github.com/chhiengphouchhit",
     x: "https://x.com/yourusername",
     calendly: "https://calendly.com/yourusername/30min",
-    email: "alex@example.com",
+    email: "phouchhitchhieng@gmail.com",
   },
 
   // 8. NOTIFICATION SETTINGS

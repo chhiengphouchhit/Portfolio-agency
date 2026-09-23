@@ -31,7 +31,7 @@ export const FullPortfolioView = ({ template, onBack }) => {
   const [deviceMode, setDeviceMode] = useState("desktop"); // "desktop" | "mobile"
   const [selectedDemoProject, setSelectedDemoProject] = useState(null);
 
-  const telegramOrderLink = `https://t.me/yourusername?text=${encodeURIComponent(
+  const telegramOrderLink = `https://t.me/ChhiengPhouChhit?text=${encodeURIComponent(
     `សួស្តី! ខ្ញុំបានមើលគំរូពិតហើយ ខ្ញុំចង់កុម្ម៉ង់ធ្វើ Portfolio ម៉ូត៖ ${template.title.km} (${template.price})`
   )}`;
 
