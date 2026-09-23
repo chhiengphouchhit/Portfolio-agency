@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Phone, Mail, Calendar, Sparkles, CheckCircle2 } from "lucide-react";
+import { Send, Phone, Mail, Calendar, Sparkles, CheckCircle2, Facebook } from "lucide-react";
 import { portfolioConfig } from "../../config/portfolio.config";
 import { useLanguage } from "../../context/LanguageContext";
 import { sendContactNotification } from "../../services/contactService";
@@ -71,6 +71,28 @@ export const ContactSection = ({ onToast }) => {
                   </div>
                   <div className="text-base font-bold text-slate-900 dark:text-white group-hover:text-brand-500 transition-colors">
                     {labels.contact.telegramQuick}
+                  </div>
+                </div>
+              </a>
+            )}
+
+            {/* Facebook Direct */}
+            {socials.facebook && (
+              <a
+                href={socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card rounded-2xl p-5 border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all flex items-center gap-4 group"
+              >
+                <div className="p-3.5 rounded-xl bg-blue-500/10 text-blue-500 group-hover:scale-110 transition-transform">
+                  <Facebook className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    Facebook Profile
+                  </div>
+                  <div className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">
+                    Connect on Facebook
                   </div>
                 </div>
               </a>

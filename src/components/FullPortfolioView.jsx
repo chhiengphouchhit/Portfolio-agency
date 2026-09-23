@@ -19,6 +19,7 @@ import {
   ExternalLink,
   Github,
   Eye,
+  Facebook,
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { ThemeToggle } from "./layout/ThemeToggle";
@@ -523,6 +524,16 @@ export const FullPortfolioView = ({ template, onBack }) => {
               >
                 <Send className="w-4 h-4" />
                 <span>{isKhmer ? "ជជែកតាម Telegram ផ្ទាល់" : "Direct Telegram Chat"}</span>
+              </a>
+
+              <a
+                href="https://facebook.com/share/1BwDqc6syu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl font-bold text-sm bg-[#1877F2] hover:bg-[#0c63d4] text-white shadow-xl shadow-blue-600/20 hover:scale-105 transition-all transform active:scale-95"
+              >
+                <Facebook className="w-4 h-4" />
+                <span>{isKhmer ? "ទាក់ទងតាម Facebook" : "Facebook Messenger"}</span>
               </a>
             </div>
           </section>

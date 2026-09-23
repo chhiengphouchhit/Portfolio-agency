@@ -355,7 +355,7 @@ export const portfolioConfig = {
   // 7. SOCIAL LINKS & DIRECT CONTACTS
   socials: {
     telegram: "https://t.me/ChhiengPhouChhit",
-    facebook: "https://facebook.com/yourbrand",
+    facebook: "https://facebook.com/share/1BwDqc6syu",
     phone: "081536697",
     linkedin: "https://linkedin.com/in/chhiengphouchhit",
     github: "https://github.com/chhiengphouchhit",
