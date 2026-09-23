@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#p2Grad)"/>
+  <!-- Coffee & Restaurant Brand Identity Mockup -->
+  <g transform="translate(180, 70)">
+    <!-- Cup / Packaging -->
+    <rect x="120" y="40" width="200" height="260" rx="20" fill="#09090b" stroke="#3f3f46" stroke-width="2"/>
+    <circle cx="220" cy="150" r="50" fill="url(#accentGrad)"/>
+    <text x="220" y="158" font-family="'DM Sans', sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">ROAST</text>
+    <text x="220" y="185" font-family="'DM Sans', sans-serif" font-size="12" letter-spacing="3" fill="#ffffff" text-anchor="middle">SPECIALTY COFFEE</text>
+  </g>
+  <text x="400" y="420" font-family="'DM Sans', sans-serif" font-size="20" font-weight="600" fill="#a1a1aa" text-anchor="middle">Artisan Coffee Brand &amp; Packaging Identity</text>
+</svg>

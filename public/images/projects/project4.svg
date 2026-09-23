@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#31104b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#p4Grad)"/>
+  <!-- Video / Cinematography Mockup -->
+  <g transform="translate(150, 60)">
+    <rect x="0" y="0" width="500" height="300" rx="16" fill="#0b0f19" stroke="#c084fc" stroke-width="2"/>
+    <circle cx="250" cy="150" r="45" fill="#a855f7" opacity="0.9"/>
+    <polygon points="240,135 270,150 240,165" fill="#ffffff"/>
+    <rect x="40" y="250" width="420" height="8" rx="4" fill="#334155"/>
+    <rect x="40" y="250" width="180" height="8" rx="4" fill="#ec4899"/>
+  </g>
+  <text x="400" y="420" font-family="'DM Sans', sans-serif" font-size="20" font-weight="600" fill="#e9d5ff" text-anchor="middle">Cinematic Documentary &amp; Commercial Reel</text>
+</svg>
